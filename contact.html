@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElBabes</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/7c78b7f7f3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header id="shopMenu">
+        <div class="logo"><a href="index.html"><img src="Toy-teddy-bear-in-white-and-pink-color-on-transparent-background-PNG.png" alt="" width="100%">ElBabes</a></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#"class="active"id="shopMenu">Contact</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    
+    <!--CONTACT US-->
+
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h3>GET IN TOUCH</h3>
+            <hr>
+            <input type="hidden" name="access_key" value="f6f4ad82-9367-4699-a64d-91839c36a5f6">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Email id" required>
+            <input type="tel" id="phone" name="tel" placeholder="Phone no." required>
+            <textarea id="message" rows="4"placeholder="How can we help you?"name="textarea"></textarea>
+            <button type="submit">Send<i class="fa-regular fa-paper-plane"></i></button>
+        </form>
+    </div>
+   
+      <!--- STAY TO UPDATE-->
+      <section id="newsletter" style="margin-top: 50px;display: none;">
+        <div class="newstext">
+            <h3>Stay Uptodate!!</h3>
+            <p style="color: #fff;">Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <form name="submit-to-google-sheet">
+                <input type="email"name="E-mail" placeholder="Your email address" required>
+                <button type="submit"><img src="send-icon.png" width="30px"></button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </section>
+
+
+    <!---FOOTER-->
+    <footer class="footer">
+       <div class="footer-col">
+        <div class="partners">
+            <h3><img src="Toy-teddy-bear-in-white-and-pink-color-on-transparent-background-PNG.png" alt=""></h3>
+        <p>In partnership with <a href="https://www.tiktok.com/@emotioncode0?_t=8jyp7tO4gq6&_r=">BrokenHeartBeats</a> and <a href="https://www.tiktok.com/@elevatemindss?_t=8jypNtWwEoX&_r=1">ElevateMinds</a></p>
+        </div>
+       </div> 
+       <div class="footer-col">
+        <h3>About</h3>
+        <div class="about-footer">
+            <a href="about.html">About us</a>
+            <a href="https://shipping.amazon.com">Delivery Information</a>
+            <a href="shop.html">Shop</a>
+            <a href="#">Contact us</a>
+            <a href="blog.html">Blog</a>
+        
+        </div>
+       </div>
+       <div class="footer-col">
+        <h3>Featured</h3>
+        <p>Boys</p>
+        <p>Girls</p>
+        <p>Tranding</p>
+        <p>New Arrivals</p>
+       </div>
+       <div>
+        <div class="footer-col">
+            <div class="app">
+                <p>Secured Payment Gateways</p>
+                <img src="visa logo.png" alt="">
+                <img src="amazon-logo.png" alt="">
+            </div>
+        </div>
+       </div>
+    </footer>
+    <div class="copyright">
+        <p>ElBabes @2024 All Right Reserved</p>
+    </div>
+
+    <script>
+        
+
+        let menu = document.querySelector("#menu-icon");
+        let ul = document.querySelector("ul")
+
+        menu.onclick =() => {
+            menu.classList.toggle('bx-x');
+            ul.classList.toggle('open')
+        };
+        window.onscroll =() => {
+            menu.classList.remove('bx-x');
+            ul.classList.remove('open')
+        };
+       
+       
+    </script>
+</body>
+</html>
